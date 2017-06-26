@@ -5,9 +5,8 @@
    If the result is greater than the threshold, it writes
    "light switch on!" to the serial port, and toggles the LED on pin 13.
 
-   First function active when piezo got hit.
- 
-   Second function send singnal to 120V power relay and lit up two light bulbs in real time.     
+   1. First function active when piezo got hit.
+   2. Second function send singnal to 120V power relay and lit up two light bulbs in real time.     
 
    created 25 June 2017
    by Yen Chuang <https://github.com/antigenius0910>
