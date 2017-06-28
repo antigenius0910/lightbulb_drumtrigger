@@ -1,5 +1,7 @@
 # Drum_trigger_light_bulbs
 
+   Ride with buzzer underneath acting as a trigger controlling volume sensor on or off. Volume sensor then trigger 120v power relay to lit   up the light bulbs
+   
    This sketch reads a piezo element to detect a knocking sound.
    It reads an analog pin and compares the result to a set threshold.
    If the result is greater than the threshold, it writes
