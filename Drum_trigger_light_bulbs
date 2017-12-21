@@ -17,7 +17,7 @@
 
 
 // these constants won't change:
-//const int ledPin = 13;      // led connected to digital pin 13 (for Piano loop)
+const int ledPin = 13;      // led connected to digital pin 13 (for Piano loop)
 const int knockSensor = A0; // the piezo is connected to analog pin 0
 const int threshold = 180;  // threshold value to decide when the detected sound is a knock or not
 
@@ -52,8 +52,8 @@ void loop() {
        knock();
        //Serial.println("light switch off!");
        //Serial.println(lightswitchstate); 
-        analogWrite(9, 255); //lightblub1 initial state off
-        analogWrite(11, 255); //lightblub2 inital state off
+        analogWrite(9, 0); //lightblub1 initial state off
+        analogWrite(11, 0); //lightblub2 inital state off
   }
 
 }
