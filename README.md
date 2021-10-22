@@ -1,8 +1,10 @@
 # Drum_trigger_light_bulbs
 
    See it in action
-   1. https://www.facebook.com/yenkuang.chuang/videos/a.10213879098592069/10213879098712072/?type=3
-   2. https://www.facebook.com/yenkuang.chuang/videos/vb.1246561742/10214486585338858/?type=3
+
+https://user-images.githubusercontent.com/5915590/138387309-1627bdb9-91b4-48f7-8343-53af879759d7.mp4
+
+
    
    Ride with buzzer underneath acting as a trigger controlling volume sensor on or off. Volume sensor then trigger 120v power relay to lit   up the light bulbs
    
