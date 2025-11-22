@@ -1,18 +1,57 @@
-# Drum Trigger Light Bulbs
+# Drum-Triggered Stage Lighting (Ride Cymbal Lightbulb Trigger)
 
 [![License](https://img.shields.io/badge/license-Public%20Domain-blue.svg)](LICENSE)
 [![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat&logo=Arduino&logoColor=white)](https://www.arduino.cc/)
 [![Made with Love](https://img.shields.io/badge/Made%20with-❤-red.svg)](https://github.com/antigenius0910)
 
-> Transform your drum set into an interactive light show! This Arduino-based project uses piezo sensors to trigger 120V light bulbs in real-time when you play drums.
+**Turn every cymbal hit into a light show.**
 
-## 📺 Demo
+This project uses a piezo sensor mounted under a ride cymbal to detect hits and control a 120V power relay in real time, lighting up two household bulbs on every strong hit.
 
-See it in action:
+---
 
-https://github.com/user-attachments/assets/636e20eb-7e4b-4cda-b489-996dc47fb586
+## Demo
 
-## ✨ Features
+▶️ **[Watch the demo video](https://github.com/user-attachments/assets/636e20eb-7e4b-4cda-b489-996dc47fb586)**
+
+*(Live performance with the ride cymbal triggering the lights.)*
+
+---
+
+## Motivation
+
+I wanted a cheap, DIY way to sync drum hits with stage lights without buying an expensive commercial drum trigger + DMX lighting system.
+
+**Goals:**
+
+- Trigger real 120V bulbs directly from a cymbal
+- Keep latency low enough to feel "instant"
+- Use simple, hobby-friendly parts (Arduino + relay module)
+- Add visual impact to live performances on a budget
+
+---
+
+## How It Works
+
+**Signal path:**
+
+1. **Piezo sensor** under ride cymbal converts vibration → voltage
+2. **Arduino** reads analog input and compares to a threshold
+3. When the threshold is exceeded:
+   - Turn on digital output pin
+   - Drive a 120V relay module
+4. **Relay** closes the circuit to power two light bulbs
+
+**Two-stage control:**
+
+- **Stage 1 (Piezo):** Toggles the system on/off with 2-second debouncing
+- **Stage 2 (Sound sensor):** Modulates light brightness based on volume
+
+When you hit the ride cymbal hard enough, the piezo triggers the Arduino, which instantly activates the relay. The lights respond in real-time, creating a synchronized visual effect with your drumming.
+
+---
+
+## Features
 
 - **Real-time drum detection** using piezo sensor technology
 - **Sound-reactive lighting** with Parallax Sound Impact Sensor
@@ -135,9 +174,7 @@ The default threshold for drum hit detection is set to `180`. To adjust:
 - Lower threshold = more sensitive (softer hits trigger)
 - Typical range: 100-300 depending on your setup
 
-## 🔍 How It Works
-
-The system operates in two main stages:
+## Technical Implementation
 
 ### Stage 1: System Activation (Piezo Sensor)
 - Reads analog input from piezo sensor on pin A0
@@ -151,7 +188,7 @@ The system operates in two main stages:
 - **No sound (LOW)**: Sets lights to full brightness (255)
 - Uses PWM on pins 9 and 11 for smooth dimming control
 
-### Technical Details
+### Key Technical Details
 - **Debouncing**: Prevents false triggers using `millis()` timing instead of `delay()`
 - **Non-blocking code**: Main loop runs continuously without delays
 - **PWM Control**: `analogWrite()` provides 0-255 brightness levels
