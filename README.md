@@ -1,8 +1,20 @@
 # Drum-Triggered Stage Lighting (Ride Cymbal Lightbulb Trigger)
 
+<div align="center">
+
 [![License](https://img.shields.io/badge/license-Public%20Domain-blue.svg)](LICENSE)
 [![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat&logo=Arduino&logoColor=white)](https://www.arduino.cc/)
+[![Hardware](https://img.shields.io/badge/Hardware-Open%20Source-orange.svg)](HARDWARE.md)
+[![GitHub Stars](https://img.shields.io/github/stars/antigenius0910/lightbulb_drumtrigger?style=social)](https://github.com/antigenius0910/lightbulb_drumtrigger/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/antigenius0910/lightbulb_drumtrigger?style=social)](https://github.com/antigenius0910/lightbulb_drumtrigger/network/members)
+
+[![Code Size](https://img.shields.io/github/languages/code-size/antigenius0910/lightbulb_drumtrigger)](https://github.com/antigenius0910/lightbulb_drumtrigger)
+[![Platform](https://img.shields.io/badge/platform-Arduino-lightgrey.svg)](https://www.arduino.cc/)
+[![C++](https://img.shields.io/badge/language-C%2B%2B-blue.svg)](https://isocpp.org/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Made with Love](https://img.shields.io/badge/Made%20with-❤-red.svg)](https://github.com/antigenius0910)
+
+</div>
 
 **Turn every cymbal hit into a light show.**
 
