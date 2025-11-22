@@ -67,6 +67,8 @@ When you hit the ride cymbal hard enough, the piezo triggers the Arduino, which 
 
 ## 🔧 Hardware Requirements
 
+📖 **For complete hardware documentation, assembly instructions, and wiring diagrams, see [HARDWARE.md](HARDWARE.md)**
+
 ### Bill of Materials (BOM)
 
 | Component | Quantity | Notes |
