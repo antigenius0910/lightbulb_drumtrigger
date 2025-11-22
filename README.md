@@ -14,9 +14,9 @@ This project uses a piezo sensor mounted under a ride cymbal to detect hits and 
 
 **Live performance with the ride cymbal triggering the lights:**
 
-<video src="https://github.com/user-attachments/assets/636e20eb-7e4b-4cda-b489-996dc47fb586" controls loop width="100%"></video>
+<video src="https://github.com/user-attachments/assets/636e20eb-7e4b-4cda-b489-996dc47fb586" autoplay muted controls loop width="100%"></video>
 
-*🔊 Click play to watch with sound and see the lights sync with every cymbal hit!*
+*🔊 Click the unmute button (🔇) to hear the cymbal hits sync with the lights!*
 
 ---
 
