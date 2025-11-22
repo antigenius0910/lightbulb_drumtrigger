@@ -2,12 +2,7 @@
 
    See it in action
 
-https://github.com/user-attachments/assets/f0d578c8-18b0-4491-8548-faf5e16a3bf7
-
-
-
-
-
+https://github.com/user-attachments/assets/636e20eb-7e4b-4cda-b489-996dc47fb586
    
    Ride with buzzer underneath acting as a trigger controlling volume sensor on or off. Volume sensor then trigger 120v power relay to lit   up the light bulbs
    
